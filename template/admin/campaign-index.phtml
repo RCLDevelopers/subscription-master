@@ -1,0 +1,67 @@
+<?php $this->css($this->assetModule('css/admin.css')); ?>
+<div class="clearfix">
+    <?php if (!empty($list)) { ?>
+        <h3><?php _e('List of campaigns'); ?></h3>
+        <table class="table table-striped table-bordered table-sm">
+            <tr>
+                <th><?php _e('ID'); ?></th>
+                <th><?php _e('Title'); ?></th>
+                <th><?php _e('Join'); ?></th>
+                <th><?php _e('Type'); ?></th>
+                <th><?php _e('Time'); ?></th>
+                <th><?php _e('Action'); ?></th>
+            </tr>
+            <?php foreach ($list as $campaign) { ?>
+                <?php
+                if ($campaign['status'] == 1) {
+                    $labelIdClass = 'label-success';
+                } elseif ($campaign['status'] == 2) {
+                    $labelIdClass = 'label-warning';
+                } elseif ($campaign['status'] == 3) {
+                    $labelIdClass = 'label-warning';
+                } elseif ($campaign['status'] == 4) {
+                    $labelIdClass = 'label-warning';
+                } elseif ($campaign['status'] == 5) {
+                    $labelIdClass = 'label-danger';
+                }
+                ?>
+                <tr<?php if ($campaign['isExpire']) { echo ' class="danger"'; } ?>>
+                    <td><span
+                                class="label <?php echo $labelIdClass; ?>"><?php echo $this->escape($campaign['id']); ?></span>
+                    </td>
+                    <td><?php echo $this->escape($campaign['title']); ?></td>
+                    <td><?php echo $this->escape($campaign['join']); ?></td>
+                    <td><?php switch ($campaign['subscription_type']) {
+                            case 'email':
+                                _e('Email');
+                                break;
+
+                            case 'sms':
+                                _e('Sms');
+                                break;
+
+                            case 'both':
+                                _e('Both');
+                                break;
+                        } ?></td>
+                    <td><?php echo $this->escape($campaign['time']); ?></td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" title="<?php _e('Edit'); ?>"
+                           href="<?php echo $this->url('', array('action' => 'update', 'id' => $campaign['id'])); ?>"><i
+                                    class="fas fa-edit"></i> <?php _e('Edit'); ?></a>
+                        <a class="btn btn-success btn-sm" target="_blank" title="<?php _e('View'); ?>"
+                           href="<?php echo $this->escape($campaign['url']); ?>"><i
+                                    class="far fa-eye"></i> <?php _e('View'); ?></a>
+                    </td>
+                </tr>
+            <?php } ?>
+        </table>
+        <div class="paginator">
+            <?php echo $this->paginationControl($paginator, 'Sliding', 'paginator.phtml'); ?>
+        </div>
+    <?php } else { ?>
+        <div class="alert alert-danger" role="alert">
+            <?php _e('You still didnt build any new campaign, if you need please build new one. system work without campaign'); ?>
+        </div>
+    <?php } ?>
+</div>

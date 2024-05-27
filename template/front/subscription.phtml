@@ -1,0 +1,26 @@
+<?php $this->css($this->assetModule('css/front.css')); ?>
+<div class="clearfix">
+    <?php if (!empty($campaign['largeUrl'])) { ?>
+        <div class="campaign-width-description">
+            <h1 class="p-name" itemprop="name"><?php echo $this->escape($campaign['title']); ?></h1>
+        </div>
+        <div class="campaign-width-image">
+            <img class="img-fluid" itemprop="image" src="<?php echo $campaign['largeUrl']; ?>"
+                 alt="<?php echo $this->escape($campaign['title']); ?>">
+        </div>
+    <?php } else { ?>
+        <div class="page-header">
+            <h1 class="p-name" itemprop="name"><?php echo $this->escape($campaign['title']); ?></h1>
+        </div>
+    <?php } ?>
+    <?php if (!empty($campaign['text_description'])) { ?>
+        <div class="e-description clearfix" itemprop="description"><?php echo $campaign['text_description']; ?></div>
+    <?php } ?>
+    <?php if (isset($form)) { ?>
+        <div class="clearfix row">
+            <div class="col-md-12">
+                <?php echo $this->form($form); ?>
+            </div>
+        </div>
+    <?php } ?>
+</div>

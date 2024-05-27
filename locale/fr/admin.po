@@ -1,0 +1,209 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pi Subscription module\n"
+"POT-Creation-Date: 2019-05-11 11:44+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _a;_t\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config/block.php:16 config/config.php:80 config/module.php:16
+msgid "Subscription"
+msgstr ""
+
+#: config/block.php:17 config/module.php:17
+msgid "Subscribe to Newsletter and website campaign"
+msgstr ""
+
+#: config/block.php:22 config/config.php:59
+msgid "Show name on subscription"
+msgstr ""
+
+#: config/block.php:29 config/config.php:67
+msgid "Show mobile on subscription"
+msgstr ""
+
+#: config/config.php:17
+msgid "Admin"
+msgstr ""
+
+#: config/config.php:21
+msgid "Subscription form"
+msgstr ""
+
+#: config/config.php:25
+msgid "Default campaign"
+msgstr ""
+
+#: config/config.php:29
+msgid "Image"
+msgstr ""
+
+#: config/config.php:33
+msgid "Notification"
+msgstr ""
+
+#: config/config.php:42
+msgid "Perpage"
+msgstr ""
+
+#: config/config.php:51
+msgid "Enabled ?"
+msgstr ""
+
+#: config/config.php:76
+msgid "Default title"
+msgstr ""
+
+#: config/config.php:84
+msgid "Default description text"
+msgstr ""
+
+#: config/config.php:92
+msgid "Default subscription text"
+msgstr ""
+
+#: config/config.php:100
+msgid "Default email text"
+msgstr ""
+
+#: config/config.php:108
+msgid "Default sms text"
+msgstr ""
+
+#: config/config.php:115
+msgid "Default subscription type"
+msgstr ""
+
+#: config/config.php:134
+msgid "Image Size"
+msgstr ""
+
+#: config/config.php:142
+msgid "Image quality"
+msgstr ""
+
+#: config/config.php:143
+msgid "Between 0 to 100 and support both of JPG and PNG, default is 75"
+msgstr ""
+
+#: config/config.php:150
+msgid "Image path"
+msgstr ""
+
+#: config/config.php:158
+msgid "Image Extension"
+msgstr ""
+
+#: config/config.php:166
+msgid "Large Image height"
+msgstr ""
+
+#: config/config.php:174
+msgid "Large Image width"
+msgstr ""
+
+#: config/config.php:182
+msgid "Medium Image height"
+msgstr ""
+
+#: config/config.php:190
+msgid "Medium Image width"
+msgstr ""
+
+#: config/config.php:198
+msgid "Thumb Image height"
+msgstr ""
+
+#: config/config.php:206
+msgid "Thumb Image width"
+msgstr ""
+
+#: config/config.php:214
+msgid "Add Watermark"
+msgstr ""
+
+#: config/config.php:222
+msgid "Watermark Image"
+msgstr ""
+
+#: config/config.php:229
+msgid "Watermark Positio"
+msgstr ""
+
+#: config/config.php:235
+msgid "Top Left"
+msgstr ""
+
+#: config/config.php:236
+msgid "Top Right"
+msgstr ""
+
+#: config/config.php:237
+msgid "Bottom Left"
+msgstr ""
+
+#: config/config.php:238
+msgid "Bottom Right"
+msgstr ""
+
+#: config/config.php:249
+msgid "Notification to admin by email"
+msgstr ""
+
+#: config/config.php:257
+msgid "Notification to admin by sms"
+msgstr ""
+
+#: config/config.php:265
+msgid "Sms subscription to admin"
+msgstr ""
+
+#: config/config.php:266 config/config.php:269
+#, php-format
+msgid "Dear %s admin, %s %s joined to %s campaign"
+msgstr ""
+
+#: config/config.php:273
+msgid "Sms subscription to user"
+msgstr ""
+
+#: config/config.php:274 config/config.php:277
+#, php-format
+msgid "Dear %s %s, %s"
+msgstr ""
+
+#: config/navigation.php:17 config/navigation.php:28 config/page.php:17
+#: config/permission.php:27
+msgid "People"
+msgstr ""
+
+#: config/navigation.php:38
+msgid "Export csv"
+msgstr ""
+
+#: config/navigation.php:51 config/navigation.php:62 config/page.php:22
+#: config/permission.php:31
+msgid "Campaign"
+msgstr ""
+
+#: config/navigation.php:72
+msgid "New campaign"
+msgstr ""
+
+#: config/page.php:30
+msgid "Index page"
+msgstr ""
+
+#: config/permission.php:17
+msgid "Global public resource"
+msgstr ""
